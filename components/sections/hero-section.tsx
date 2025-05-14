@@ -4,8 +4,7 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import Link from "next/link";
-import { AnimatedShinyText } from "@/components/ui/animated-shiny-text";
+import { CountdownTimer } from "@/components/ui/countdown-timer";
 
 export default function HeroSection() {
   const router = useRouter();
@@ -49,6 +48,16 @@ export default function HeroSection() {
           transition={{ duration: 0.8 }}
           className="flex flex-col items-center justify-center md:mt-[100px]"
         >
+          {/* Countdown Timer */}
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="mb-8"
+          >
+            <CountdownTimer />
+          </motion.div>
+
           {/* Search input */}
           <div className="w-full max-w-3xl mx-auto">
             <div className="relative group">
