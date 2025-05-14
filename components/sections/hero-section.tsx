@@ -48,16 +48,6 @@ export default function HeroSection() {
           transition={{ duration: 0.8 }}
           className="flex flex-col items-center justify-center md:mt-0"
         >
-          {/* Countdown Timer */}
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="mb-8"
-          >
-            <CountdownTimer />
-          </motion.div>
-
           {/* Search input */}
           <div className="w-full max-w-3xl mx-auto">
             <div className="relative group">
@@ -85,6 +75,16 @@ export default function HeroSection() {
           >
             The Future of Learning is here. Your AI-powered educational companion. Ask questions, get explanations, and explore topics across your curriculum.
           </motion.p>
+
+          {/* Countdown Timer */}
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="mt-8"
+          >
+            <CountdownTimer />
+          </motion.div>
         </motion.div>
       </div>
 
