@@ -33,16 +33,6 @@ export default function HeroSection() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/50 to-black/90" />
       </div>
 
-      {/* Countdown Timer */}
-      <motion.div
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.2 }}
-        className="absolute top-32 left-1/2 -translate-x-1/2 z-20"
-      >
-        <CountdownTimer />
-      </motion.div>
-
       {/* Large semi-transparent Atlas text */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none">
         <span className="text-[30vw] font-bold bg-gradient-to-r from-zinc-300 to-transparent bg-clip-text text-transparent leading-none">
@@ -58,6 +48,16 @@ export default function HeroSection() {
           transition={{ duration: 0.8 }}
           className="flex flex-col items-center justify-center md:mt-[100px]"
         >
+          {/* Countdown Timer */}
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="mb-8"
+          >
+            <CountdownTimer />
+          </motion.div>
+
           {/* Search input */}
           <div className="w-full max-w-3xl mx-auto">
             <div className="relative group">
