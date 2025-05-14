@@ -1,8 +1,8 @@
 import { cn } from "@/lib/utils";
-import { TypeIcon as IconType } from "lucide-react";
+import { LucideProps } from "lucide-react";
 
 interface FeatureCardProps {
-  icon: IconType;
+  icon: React.ComponentType<LucideProps>;
   title: string;
   description: string;
   className?: string;
