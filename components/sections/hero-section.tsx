@@ -34,23 +34,6 @@ export default function HeroSection() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/50 to-black/90" />
       </div>
 
-      {/* Launch date button - hidden on mobile, visible on desktop */}
-      <Link href="/newsrelease">
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          className="absolute top-[25%] left-[48%] -translate-x-1/2 z-20 hidden md:block"
-        >
-          <div className="group rounded-full border border-white/10 bg-white/5 backdrop-blur-sm transition-all duration-300 hover:scale-105 hover:bg-white/10">
-            <AnimatedShinyText className="inline-flex items-center justify-center px-4 py-2 text-white/90 transition ease-out">
-              <span>15/05/25</span>
-              <ArrowRight className="ml-2 h-4 w-4 text-white/70 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
-            </AnimatedShinyText>
-          </div>
-        </motion.div>
-      </Link>
-
       {/* Large semi-transparent Atlas text */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none">
         <span className="text-[30vw] font-bold bg-gradient-to-r from-zinc-300 to-transparent bg-clip-text text-transparent leading-none">
