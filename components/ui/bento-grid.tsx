@@ -35,7 +35,7 @@ const timelineData: BentoItem[] = [
     title: "Project Darkfold",
     description: "Interactive canvas mode for document-style editing with real-time collaborative features and direct AI prompting.",
     icon: <ChevronRight className="h-4 w-4 text-blue-500" />,
-    status: "in-progress",
+    status: "In-progress",
     tags: ["Development", "AI"],
     colSpan: 2,
     hasPersistentHover: true,
@@ -62,7 +62,7 @@ const timelineData: BentoItem[] = [
     title: "Mobile First Design",
     description: "Complete redesign of our mobile experience with offline support and native app features.",
     icon: <Smartphone className="h-4 w-4 text-sky-500" />,
-    status: "in-progress",
+    status: "In-progress",
     tags: ["Design", "Mobile"],
     link: "/mobilefirstdesign"
   },
