@@ -46,7 +46,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="flex flex-col items-center justify-center md:mt-[100px]"
+          className="flex flex-col items-center justify-center md:mt-0"
         >
           {/* Countdown Timer */}
           <motion.div
