@@ -27,7 +27,7 @@ export interface BentoItem {
 }
 
 interface BentoGridProps {
-  items: BentoItem[];
+  items?: BentoItem[];
 }
 
 const timelineData: BentoItem[] = [

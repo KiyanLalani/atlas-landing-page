@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { BentoGrid, BentoItem } from "@/components/ui/bento-grid";
+import { BentoGrid } from "@/components/ui/bento-grid";
 
 const FutureSection = () => {
   return (
@@ -28,7 +28,7 @@ const FutureSection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <BentoGrid items={[]} />
+          <BentoGrid />
         </motion.div>
       </div>
     </section>
