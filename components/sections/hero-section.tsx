@@ -53,7 +53,7 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="mb-8"
+            className="absolute top-[15%] left-1/2 -translate-x-1/2 z-20"
           >
             <CountdownTimer />
           </motion.div>
