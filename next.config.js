@@ -11,6 +11,10 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'i.imgur.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'x.ai',
+      },
     ],
   },
   webpack: (config, { isServer }) => {
@@ -18,6 +22,15 @@ const nextConfig = {
     config.cache = false;
     return config;
   },
+  // For static export with proper SEO
+  generateMetadata: async () => {
+    return {
+      robots: {
+        index: true,
+        follow: true,
+      }
+    }
+  }
 };
 
 module.exports = nextConfig;
