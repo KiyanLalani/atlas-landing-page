@@ -3,15 +3,12 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { AnimatedShinyText } from "@/components/ui/animated-shiny-text";
 
 export default function HeroSection() {
-  const router = useRouter();
-
   const handleRedirect = () => {
-    router.push("https://atlas-site-navy.vercel.app");
+    window.location.href = "https://chat.atlas-group.uk/login";
   };
 
   const handleKeyPress = (e: React.KeyboardEvent) => {

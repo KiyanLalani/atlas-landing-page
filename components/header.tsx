@@ -116,13 +116,13 @@ const Header = () => {
           className="flex items-center gap-6"
           transition={{ duration: 0.25 }}
         >
-          <Link 
-            href="https://atlas-site-navy.vercel.app" 
+          <a 
+            href="https://chat.atlas-group.uk/login" 
             target="_blank" 
             rel="noopener noreferrer"
           >
             <InteractiveHoverButton text="Try Atlas" />
-          </Link>
+          </a>
 
           <Button
             variant="ghost"
@@ -170,14 +170,14 @@ const Header = () => {
                 </Link>
               ))}
               <div className="pt-4">
-                <Link 
-                  href="https://atlas-site-navy.vercel.app" 
+                <a 
+                  href="https://chat.atlas-group.uk/login" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="w-full"
                 >
                   <InteractiveHoverButton text="Try Atlas" className="w-full" />
-                </Link>
+                </a>
               </div>
             </nav>
           </motion.div>
