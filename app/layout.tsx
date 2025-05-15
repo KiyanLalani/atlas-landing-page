@@ -7,8 +7,8 @@ import Header from '@/components/header';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Atlas Intelligence | AI-Powered Learning Platform',
-  description: 'Next-generation AI-powered educational platform designed for GCSE and A-Level students.',
+  title: 'Atlas Intelligence | Learn Smarter with AI',
+  description: 'Atlas Intelligence is an AI-powered learning platform designed for students.',
 };
 
 export default function RootLayout({
