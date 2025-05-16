@@ -20,6 +20,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/',
   },
+  icons: {
+    icon: 'https://i.imgur.com/YOAmR5d.png',
+    apple: 'https://i.imgur.com/YOAmR5d.png',
+    shortcut: 'https://i.imgur.com/YOAmR5d.png',
+  },
   openGraph: {
     title: 'Atlas Intelligence | AI-Powered Educational App for iOS',
     description: 'Atlas Intelligence is an AI-powered education app for iOS that helps students study smarter. Generate flashcards, search the web, get help with assignments, and explore topics across your curriculum.',
@@ -66,6 +71,9 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <SchemaMarkup />
+        <link rel="icon" href="https://i.imgur.com/YOAmR5d.png" />
+        <link rel="apple-touch-icon" href="https://i.imgur.com/YOAmR5d.png" />
+        <link rel="shortcut icon" href="https://i.imgur.com/YOAmR5d.png" />
       </head>
       <body className={inter.className}>
         <ThemeProvider

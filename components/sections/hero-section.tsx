@@ -5,10 +5,25 @@ import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { AnimatedShinyText } from "@/components/ui/animated-shiny-text";
+import { useState, useEffect } from "react";
 
 export default function HeroSection() {
+  // State to store the prompt input
+  const [prompt, setPrompt] = useState("");
+  
   const handleRedirect = () => {
-    window.location.href = "https://chat.atlas-group.uk/login";
+    if (!prompt.trim()) {
+      // If prompt is empty, just redirect to login page
+      window.location.href = "https://chat.atlas-group.uk/login";
+      return;
+    }
+
+    // URL encode the prompt
+    const encodedPrompt = encodeURIComponent(prompt.trim());
+    
+    // Always include the prompt in the URL, even when redirecting to login
+    // The chat application can handle retrieving this prompt after login
+    window.location.href = `https://chat.atlas-group.uk/login?prompt=${encodedPrompt}`;
   };
 
   const handleKeyPress = (e: React.KeyboardEvent) => {
@@ -57,6 +72,8 @@ export default function HeroSection() {
                 type="text"
                 placeholder="Ask Atlas anything..."
                 className="w-full px-6 py-4 bg-zinc-900/80 border border-zinc-800 rounded-full text-zinc-100 placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-zinc-700 transition-all group-hover:bg-zinc-900/90"
+                value={prompt}
+                onChange={(e) => setPrompt(e.target.value)}
                 onKeyPress={handleKeyPress}
                 aria-label="Search Atlas Intelligence"
               />
