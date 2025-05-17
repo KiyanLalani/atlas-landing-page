@@ -14,7 +14,7 @@ export default function HeroSection() {
   const handleRedirect = () => {
     if (!prompt.trim()) {
       // If prompt is empty, just redirect to login page
-      window.location.href = "https://chat.atlas-group.uk/login";
+      window.location.href = "https://chat.atlasintel.co.uk/login";
       return;
     }
 
@@ -23,7 +23,7 @@ export default function HeroSection() {
     
     // Always include the prompt in the URL, even when redirecting to login
     // The chat application can handle retrieving this prompt after login
-    window.location.href = `https://chat.atlas-group.uk/login?prompt=${encodedPrompt}`;
+    window.location.href = `https://chat.atlasintel.co.uk/login?prompt=${encodedPrompt}`;
   };
 
   const handleKeyPress = (e: React.KeyboardEvent) => {

@@ -117,7 +117,7 @@ const Header = () => {
           transition={{ duration: 0.25 }}
         >
           <a 
-            href="https://chat.atlas-group.uk/login" 
+            href="https://chat.atlasintel.co.uk/login" 
             target="_blank" 
             rel="noopener noreferrer"
           >
@@ -171,7 +171,7 @@ const Header = () => {
               ))}
               <div className="pt-4">
                 <a 
-                  href="https://chat.atlas-group.uk/login" 
+                  href="https://chat.atlasintel.co.uk/login" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="w-full"
