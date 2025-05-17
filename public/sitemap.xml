@@ -1,122 +1,124 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
 <url>
-  <loc>https://www.atlas-group.uk/</loc>
-  <lastmod>2024-05-24T21:14:00+00:00</lastmod>
-  <priority>1.00</priority>
+<loc>https://www.atlas-group.uk/</loc>
+<lastmod>2025-05-16T23:11:17+00:00</lastmod>
+<priority>1.00</priority>
 </url>
 <url>
-  <loc>https://www.atlas-group.uk/news</loc>
-  <lastmod>2024-05-24T21:17:53+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.atlas-group.uk/news</loc>
+<lastmod>2025-05-17T09:26:04+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.atlas-group.uk/pricing</loc>
-  <lastmod>2024-05-24T21:17:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.atlas-group.uk/pricing</loc>
+<lastmod>2025-05-16T23:11:21+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.atlas-group.uk/QAengine</loc>
-  <lastmod>2024-05-24T21:17:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.atlas-group.uk/QAengine</loc>
+<lastmod>2025-05-17T09:26:04+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.atlas-group.uk/smartquizgenerator</loc>
-  <lastmod>2024-05-24T21:17:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.atlas-group.uk/smartquizgenerator</loc>
+<lastmod>2025-05-17T09:26:05+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.atlas-group.uk/flashcardmaker</loc>
-  <lastmod>2024-05-24T21:17:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.atlas-group.uk/flashcardmaker</loc>
+<lastmod>2025-05-17T09:26:05+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.atlas-group.uk/essaysupport</loc>
-  <lastmod>2024-05-24T21:17:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.atlas-group.uk/essaysupport</loc>
+<lastmod>2025-05-17T09:26:05+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.atlas-group.uk/pastpaperlocator</loc>
-  <lastmod>2024-05-24T21:17:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.atlas-group.uk/pastpaperlocator</loc>
+<lastmod>2025-05-17T09:26:05+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.atlas-group.uk/enhancedthinking</loc>
-  <lastmod>2024-05-24T21:17:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.atlas-group.uk/enhancedthinking</loc>
+<lastmod>2025-05-17T09:26:05+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.atlas-group.uk/deepresearch</loc>
-  <lastmod>2024-05-24T21:17:55+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.atlas-group.uk/deepresearch</loc>
+<lastmod>2025-05-17T09:26:05+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.atlas-group.uk/curriculumalignment</loc>
-  <lastmod>2024-05-24T21:17:55+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.atlas-group.uk/curriculumalignment</loc>
+<lastmod>2025-05-17T09:26:05+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.atlas-group.uk/macosapp</loc>
-  <lastmod>2024-05-24T21:17:55+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.atlas-group.uk/macosapp</loc>
+<lastmod>2025-05-17T09:26:06+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.atlas-group.uk/workspaceintegrations</loc>
-  <lastmod>2024-05-24T21:17:55+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.atlas-group.uk/workspaceintegrations</loc>
+<lastmod>2025-05-17T09:26:06+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.atlas-group.uk/darkfold</loc>
-  <lastmod>2024-05-24T21:17:55+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.atlas-group.uk/darkfold</loc>
+<lastmod>2025-05-17T09:26:06+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.atlas-group.uk/crossplatformapps</loc>
-  <lastmod>2024-05-24T21:17:55+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.atlas-group.uk/crossplatformapps</loc>
+<lastmod>2025-05-17T09:26:06+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.atlas-group.uk/promptlibrary</loc>
-  <lastmod>2024-05-24T21:17:56+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.atlas-group.uk/promptlibrary</loc>
+<lastmod>2025-05-17T09:26:06+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.atlas-group.uk/mobilefirstdesign</loc>
-  <lastmod>2024-05-24T21:17:56+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.atlas-group.uk/mobilefirstdesign</loc>
+<lastmod>2025-05-17T09:26:06+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.atlas-group.uk/promptenhancer</loc>
-  <lastmod>2024-05-24T21:17:56+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.atlas-group.uk/promptenhancer</loc>
+<lastmod>2025-05-17T09:26:07+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.atlas-group.uk/internationalcurriculum</loc>
-  <lastmod>2024-05-24T21:17:56+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.atlas-group.uk/internationalcurriculum</loc>
+<lastmod>2025-05-17T09:26:07+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.atlas-group.uk/AIPoweredLearningV2</loc>
-  <lastmod>2024-05-24T21:17:56+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.atlas-group.uk/AIPoweredLearningV2</loc>
+<lastmod>2025-05-17T09:26:07+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.atlas-group.uk/waitlist</loc>
-  <lastmod>2024-05-24T21:17:56+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://www.atlas-group.uk/privacypolicy</loc>
+<lastmod>2025-05-17T09:26:07+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://www.atlas-group.uk/newsrelease</loc>
-  <lastmod>2024-05-24T21:17:56+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://www.atlas-group.uk/termsandconditions</loc>
+<lastmod>2025-05-17T09:26:07+00:00</lastmod>
+<priority>0.80</priority>
 </url>
-
-
+<url>
+<loc>https://www.atlas-group.uk/waitlist</loc>
+<lastmod>2025-05-17T09:26:07+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://www.atlas-group.uk/newsrelease</loc>
+<lastmod>2025-05-17T09:26:07+00:00</lastmod>
+<priority>0.64</priority>
+</url>
 </urlset> 

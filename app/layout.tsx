@@ -8,9 +8,9 @@ import SchemaMarkup from './schema';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Atlas Intelligence | AI-Powered Educational App for iOS',
-  description: 'Atlas Intelligence is an AI-powered education app for iOS that helps students study smarter. Generate flashcards, search the web, get help with assignments, and explore topics across your curriculum.',
-  keywords: 'educational AI app, iOS education app, AI flashcards, study help, learning assistant, student AI tool, atlas intelligence, educational technology, exam preparation, curriculum assistance',
+  title: 'Atlas Intelligence | AI Education Platform by Atlas Group UK',
+  description: 'Atlas Intelligence by Atlas Group is an AI-powered education platform that revolutionizes learning with smart tools, flashcards, and curriculum assistance for students and educators.',
+  keywords: 'Atlas Intelligence, Atlas AI, Atlas Education, Atlas Group, educational AI app, iOS education app, AI flashcards, study help, learning assistant, student AI tool, educational technology, exam preparation, curriculum assistance, UK education AI',
   authors: [{ name: 'Atlas Group' }],
   category: 'Education',
   creator: 'Atlas Group',
@@ -26,25 +26,25 @@ export const metadata: Metadata = {
     shortcut: 'https://i.imgur.com/YOAmR5d.png',
   },
   openGraph: {
-    title: 'Atlas Intelligence | AI-Powered Educational App for iOS',
-    description: 'Atlas Intelligence is an AI-powered education app for iOS that helps students study smarter. Generate flashcards, search the web, get help with assignments, and explore topics across your curriculum.',
+    title: 'Atlas Intelligence | AI Education Platform by Atlas Group UK',
+    description: 'Atlas Intelligence by Atlas Group is an AI-powered education platform that revolutionizes learning with smart tools, flashcards, and curriculum assistance for students and educators.',
     type: 'website',
     url: 'https://www.atlas-group.uk',
-    siteName: 'Atlas Intelligence',
+    siteName: 'Atlas Intelligence by Atlas Group',
     locale: 'en_US',
     images: [
       {
         url: 'https://www.atlas-group.uk/atlas-og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Atlas Intelligence - The AI-powered educational companion',
+        alt: 'Atlas Intelligence - The AI-powered educational companion by Atlas Group',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Atlas Intelligence | AI-Powered Educational App for iOS',
-    description: 'Atlas Intelligence is an AI-powered education app for iOS that helps students study smarter. Generate flashcards, search the web, get help with assignments, and explore topics across your curriculum.',
+    title: 'Atlas Intelligence | AI Education Platform by Atlas Group UK',
+    description: 'Atlas Intelligence by Atlas Group is an AI-powered education platform that revolutionizes learning with smart tools, flashcards, and curriculum assistance for students and educators.',
     images: ['https://www.atlas-group.uk/atlas-og-image.jpg'],
     creator: '@AtlasGroupUK',
   },
