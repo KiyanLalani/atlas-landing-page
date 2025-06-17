@@ -1,15 +1,18 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, X } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { AnimatedShinyText } from "@/components/ui/animated-shiny-text";
 import { useState, useEffect } from "react";
+import { Card } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 
 export default function HeroSection() {
   // State to store the prompt input
   const [prompt, setPrompt] = useState("");
+  const [showNewsPopup, setShowNewsPopup] = useState(true);
   
   const handleRedirect = () => {
     if (!prompt.trim()) {
@@ -52,6 +55,54 @@ export default function HeroSection() {
           ATLAS
         </span>
       </div>
+
+      {/* News Popup */}
+      {showNewsPopup && (
+        <div className="fixed top-24 right-4 z-50 max-w-sm">
+          <motion.div
+            initial={{ opacity: 0, x: 100, scale: 0.9 }}
+            animate={{ opacity: 1, x: 0, scale: 1 }}
+            exit={{ opacity: 0, x: 100, scale: 0.9 }}
+            transition={{ duration: 0.4, ease: "easeOut" }}
+          >
+            <Card className="p-4 bg-card/95 backdrop-blur-sm border-primary/20 shadow-lg">
+              <div className="flex justify-between items-start mb-3">
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
+                  <span className="text-xs font-medium text-green-500">LIVE NOW</span>
+                </div>
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  onClick={() => setShowNewsPopup(false)}
+                  className="h-6 w-6 text-muted-foreground hover:text-foreground"
+                >
+                  <X className="h-3 w-3" />
+                </Button>
+              </div>
+              
+              <h3 className="font-semibold text-sm mb-2">
+                🎉 Atlas Web Platform is Live!
+              </h3>
+              
+              <p className="text-xs text-muted-foreground mb-3 leading-relaxed">
+                We've reached the regional finals of Peter Jones Foundation's National Entrepreneur of the Year 2025!
+              </p>
+              
+              <Link href="/newswebrelease">
+                <Button 
+                  size="sm" 
+                  className="w-full text-xs group"
+                  onClick={() => setShowNewsPopup(false)}
+                >
+                  Read Full Story
+                  <ArrowRight className="ml-1 h-3 w-3 transition-transform group-hover:translate-x-0.5" />
+                </Button>
+              </Link>
+            </Card>
+          </motion.div>
+        </div>
+      )}
 
       {/* Main content */}
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4">
