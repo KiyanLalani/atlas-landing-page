@@ -30,8 +30,28 @@ export default function NewsPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="mt-12"
+            className="mt-12 space-y-8"
           >
+            <article className="rounded-lg border bg-card p-6">
+              <div className="mb-4 text-sm text-muted-foreground">
+                Published: May 15, 2025
+              </div>
+              <h2 className="text-2xl font-bold mb-4">
+                Atlas Intelligence Web Platform Goes Live
+              </h2>
+              <p className="text-muted-foreground mb-6">
+                Our web platform officially launches today, providing students with immediate access to AI-powered 
+                educational tools. Plus, Atlas Intelligence reaches the regional finals of the Peter Jones Foundation's 
+                National Entrepreneur of the Year 2025 competition, with our iOS app expected to launch soon.
+              </p>
+              <Link href="/newswebrelease">
+                <Button variant="outline" className="group">
+                  Read Full Story
+                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </Button>
+              </Link>
+            </article>
+
             <article className="rounded-lg border bg-card p-6">
               <div className="mb-4 text-sm text-muted-foreground">
                 Announced: April 27, 2025
