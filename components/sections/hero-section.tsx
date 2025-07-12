@@ -3,8 +3,9 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { AnimatedShinyText } from "@/components/ui/animated-shiny-text";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function HeroSection() {
   // State to store the prompt input
@@ -55,100 +56,51 @@ export default function HeroSection() {
       {/* Main content */}
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4">
         <motion.div
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          className="text-center space-y-8"
+          transition={{ duration: 0.8 }}
+          className="flex flex-col items-center justify-center md:mt-[100px]"
         >
-          {/* Badge */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.2, duration: 0.6 }}
-            className="flex justify-center"
-          >
-            <AnimatedShinyText className="inline-flex items-center justify-center px-4 py-1.5 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
-              <span>✨ Revolutionizing Education with AI</span>
-            </AnimatedShinyText>
-          </motion.div>
-
-          {/* Main heading */}
-          <motion.h1
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4, duration: 0.8 }}
-            className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight"
-          >
-            The Future of
-            <br />
-            <span className="bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-              Learning
-            </span>
-          </motion.h1>
-
-          {/* Subtitle */}
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.6, duration: 0.8 }}
-            className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed"
-          >
-            Atlas Intelligence transforms education with cutting-edge AI technology, 
-            providing personalized learning experiences that adapt to every student's unique needs.
-          </motion.p>
-
-          {/* Search bar */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.8, duration: 0.8 }}
-            className="max-w-2xl mx-auto"
-          >
+          <h1 className="sr-only">Atlas Intelligence - AI-Powered Educational App for iOS</h1>
+          
+          {/* Search input */}
+          <div className="w-full max-w-3xl mx-auto">
             <div className="relative group">
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 via-purple-500/20 to-pink-500/20 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-300" />
-              <div className="relative flex items-center bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-2 hover:bg-white/15 transition-all duration-300">
-                <input
-                  type="text"
-                  placeholder="Ask Atlas anything about your studies..."
-                  value={prompt}
-                  onChange={(e) => setPrompt(e.target.value)}
-                  onKeyPress={handleKeyPress}
-                  className="flex-1 bg-transparent text-white placeholder-gray-400 px-4 py-3 focus:outline-none text-lg"
-                  aria-label="Search or ask Atlas a question"
-                />
-                <button
-                  onClick={handleRedirect}
-                  className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white p-3 rounded-xl transition-all duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500/50"
-                  aria-label="Submit search or question"
-                >
-                  <ArrowRight className="w-6 h-6" />
-                </button>
-              </div>
+              <label htmlFor="search-atlas" className="sr-only">Ask Atlas anything</label>
+              <input
+                id="search-atlas"
+                type="text"
+                placeholder="Ask Atlas anything..."
+                className="w-full px-6 py-4 bg-zinc-900/80 border border-zinc-800 rounded-full text-zinc-100 placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-zinc-700 transition-all group-hover:bg-zinc-900/90"
+                value={prompt}
+                onChange={(e) => setPrompt(e.target.value)}
+                onKeyPress={handleKeyPress}
+                aria-label="Search Atlas Intelligence"
+              />
+              <button 
+                onClick={handleRedirect}
+                className="absolute right-3 top-1/2 -translate-y-1/2 p-2 rounded-full bg-zinc-800 hover:bg-zinc-700 transition-colors group-hover:bg-zinc-700"
+                aria-label="Submit search"
+              >
+                <ArrowRight className="w-5 h-5 text-zinc-400 group-hover:text-zinc-300" />
+              </button>
             </div>
-          </motion.div>
+          </div>
 
-          {/* Stats */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1, duration: 0.8 }}
-            className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto pt-8"
+          {/* Description text */}
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 0.3 }}
+            className="mt-6 text-zinc-300 text-sm max-w-md text-center"
           >
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-white mb-2">10K+</div>
-              <div className="text-gray-400">Students Helped</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-white mb-2">95%</div>
-              <div className="text-gray-400">Accuracy Rate</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-white mb-2">24/7</div>
-              <div className="text-gray-400">AI Support</div>
-            </div>
-          </motion.div>
+            The Future of Learning is here. Your AI-powered educational companion for iOS. Ask questions, generate flashcards, search the web, get explanations, and explore topics across your curriculum.
+          </motion.p>
         </motion.div>
       </div>
+
+      {/* Bottom gradient fade */}
+      <div className="absolute inset-x-0 bottom-0 h-64 bg-gradient-to-t from-[#0d0d0d] via-[#0d0d0d]/90 to-transparent" />
     </section>
   );
 }
