@@ -46,7 +46,7 @@ export default function TermsAndConditionsPage() {
               <p className="mt-4">These terms and conditions are effective as of 2025-05-15</p>
 
               <h2 className="text-2xl font-semibold mt-8 mb-4">Contact Us</h2>
-              <p>If you have any questions or suggestions about the Terms and Conditions, please do not hesitate to contact the Service Provider at kiyanl@atlas-group.uk.</p>
+              <p>If you have any questions or suggestions about the Terms and Conditions, please do not hesitate to contact the Service Provider at kiyanl@atlasintel.co.uk.</p>
             </div>
           </Card>
         </motion.div>

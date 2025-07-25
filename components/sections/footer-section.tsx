@@ -76,7 +76,6 @@ const FooterSection = () => {
               <Instagram className="h-6 w-6" />
             </a>
           </div>
-          <p className="text-sm text-muted-foreground">2025 Atlas Group - subsidiary of iDIGITECH Consulting Limited</p>
           <p className="text-sm text-muted-foreground">2025 Atlas Group</p>
           <p className="mt-2 text-sm text-muted-foreground mb-96">
             Intelligence Amplified

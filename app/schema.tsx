@@ -35,7 +35,7 @@ export default function SchemaMarkup() {
             "creator": {
               "@type": "Organization",
               "name": "Atlas Group",
-              "url": "https://www.atlas-group.uk"
+              "url": "https://www.atlasintel.co.uk"
             },
             "potentialAction": {
               "@type": "DownloadAction",
@@ -48,7 +48,7 @@ export default function SchemaMarkup() {
             "@type": "Organization",
             "name": "Atlas Group",
             "alternateName": ["Atlas Intelligence", "Atlas AI", "Atlas Education"],
-            "url": "https://www.atlas-group.uk",
+            "url": "https://www.atlasintel.co.uk",
             "logo": "https://i.imgur.com/YOAmR5d.png",
             "description": "Atlas Group develops innovative AI-powered educational technology solutions to transform learning experiences for students and educators.",
             "sameAs": [
@@ -61,18 +61,18 @@ export default function SchemaMarkup() {
             "contactPoint": {
               "@type": "ContactPoint",
               "contactType": "customer support",
-              "email": "support@atlas-group.uk"
+              "email": "support@atlasintel.co.uk"
             }
           },
           {
             "@context": "https://schema.org",
             "@type": "WebSite",
-            "url": "https://www.atlas-group.uk",
+            "url": "https://www.atlasintel.co.uk",
             "name": "Atlas Intelligence by Atlas Group",
             "description": "Official website for Atlas Intelligence, the AI-powered education platform developed by Atlas Group.",
             "potentialAction": {
               "@type": "SearchAction",
-              "target": "https://www.atlas-group.uk/search?q={search_term_string}",
+              "target": "https://www.atlasintel.co.uk/search?q={search_term_string}",
               "query-input": "required name=search_term_string"
             }
           }

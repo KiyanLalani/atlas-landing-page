@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: [],
       },
     ],
-    sitemap: 'https://www.atlas-group.uk/sitemap.xml',
+    sitemap: 'https://www.atlasintel.co.uk/sitemap.xml',
   };
 } 

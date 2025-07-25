@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   creator: 'Atlas Group',
   publisher: 'Atlas Group',
   applicationName: 'Atlas Intelligence',
-  metadataBase: new URL('https://www.atlas-group.uk'),
+  metadataBase: new URL('https://www.atlasintel.co.uk'),
   alternates: {
     canonical: '/',
   },
@@ -29,12 +29,12 @@ export const metadata: Metadata = {
     title: 'Atlas Intelligence | AI Education Platform by Atlas Group UK',
     description: 'Atlas Intelligence by Atlas Group is an AI-powered education platform that revolutionizes learning with smart tools, flashcards, and curriculum assistance for students and educators.',
     type: 'website',
-    url: 'https://www.atlas-group.uk',
+    url: 'https://www.atlasintel.co.uk',
     siteName: 'Atlas Intelligence by Atlas Group',
     locale: 'en_US',
     images: [
       {
-        url: 'https://www.atlas-group.uk/atlas-og-image.jpg',
+        url: 'https://www.atlasintel.co.uk/atlas-og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Atlas Intelligence - The AI-powered educational companion by Atlas Group',
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Atlas Intelligence | AI Education Platform by Atlas Group UK',
     description: 'Atlas Intelligence by Atlas Group is an AI-powered education platform that revolutionizes learning with smart tools, flashcards, and curriculum assistance for students and educators.',
-    images: ['https://www.atlas-group.uk/atlas-og-image.jpg'],
+    images: ['https://www.atlasintel.co.uk/atlas-og-image.jpg'],
     creator: '@AtlasGroupUK',
   },
   viewport: 'width=device-width, initial-scale=1',

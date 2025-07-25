@@ -49,7 +49,7 @@ export default function PrivacyPolicyPage() {
               <p>You can stop all collection of information by the Application easily by uninstalling it. You may use the standard uninstall processes as may be available as part of your mobile device or via the mobile application marketplace or network.</p>
 
               <h2 className="text-2xl font-semibold mt-8 mb-4">Data Retention Policy</h2>
-              <p>The Service Provider will retain User Provided data for as long as you use the Application and for a reasonable time thereafter. If you'd like them to delete User Provided Data that you have provided via the Application, please contact them at kiyanl@atlas-group.uk and they will respond in a reasonable time.</p>
+              <p>The Service Provider will retain User Provided data for as long as you use the Application and for a reasonable time thereafter. If you'd like them to delete User Provided Data that you have provided via the Application, please contact them at kiyanl@atlasintel.co.uk and they will respond in a reasonable time.</p>
 
               <h2 className="text-2xl font-semibold mt-8 mb-4">Children</h2>
               <p>The Service Provider does not use the Application to knowingly solicit data from or market to children under the age of 13.</p>
@@ -66,7 +66,7 @@ export default function PrivacyPolicyPage() {
               <p>By using the Application, you are consenting to the processing of your information as set forth in this Privacy Policy now and as amended by us.</p>
 
               <h2 className="text-2xl font-semibold mt-8 mb-4">Contact Us</h2>
-              <p>If you have any questions regarding privacy while using the Application, or have questions about the practices, please contact the Service Provider via email at kiyanl@atlas-group.uk.</p>
+              <p>If you have any questions regarding privacy while using the Application, or have questions about the practices, please contact the Service Provider via email at kiyanl@atlasintel.co.uk.</p>
             </div>
           </Card>
         </motion.div>
