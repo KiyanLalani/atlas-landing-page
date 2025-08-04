@@ -25,11 +25,7 @@ const FooterSection = () => {
               Next-generation AI-powered educational platform designed for GCSE and A-Level students,
               developed as part of the Tycoon 1K school enterprise initiative.
             </p>
-            <div className="flex items-center text-sm text-muted-foreground">
-              <span>10% of profits donated to </span>
-              <Heart className="mx-1 h-4 w-4 text-destructive" />
-              <span>Evelina Children's Hospital</span>
-            </div>
+
           </div>
 
           <div>

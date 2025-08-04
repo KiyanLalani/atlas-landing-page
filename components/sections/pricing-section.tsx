@@ -73,7 +73,6 @@ const PricingSection = () => {
           </h2>
           <p className="mx-auto max-w-2xl text-muted-foreground">
             Choose the plan that works best for your learning needs.
-            10% of all profits go to Evelina Children's Hospital.
           </p>
         </motion.div>
 
