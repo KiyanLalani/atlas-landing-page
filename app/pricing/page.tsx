@@ -2,27 +2,14 @@
 
 import { motion } from "framer-motion";
 import { ArrowLeft } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function PricingPage() {
   return (
-    <div className="relative min-h-screen w-full flex items-center justify-center bg-[#0d0d0d] overflow-hidden">
-      {/* Background image with gradient overlay */}
-      <div className="absolute inset-0">
-        <Image
-          src="https://x.ai/images/news/funding.webp"
-          alt="Atlas Intelligence background image"
-          fill
-          className="object-cover opacity-90"
-          priority
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/50 to-black/90" />
-      </div>
-
+    <div className="relative min-h-screen w-full flex items-center justify-center bg-gradient-to-b from-zinc-900 via-zinc-800 to-black overflow-hidden">
       {/* Large semi-transparent Atlas text */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none">
-        <span className="text-[30vw] font-bold bg-gradient-to-r from-zinc-300 to-transparent bg-clip-text text-transparent leading-none" aria-hidden="true">
+        <span className="text-[30vw] font-bold bg-gradient-to-r from-zinc-700 to-transparent bg-clip-text text-transparent leading-none" aria-hidden="true">
           ATLAS
         </span>
       </div>
