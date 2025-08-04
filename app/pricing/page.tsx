@@ -1,186 +1,88 @@
 "use client";
 
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { Check } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Switch } from "@/components/ui/switch";
-import { useMediaQuery } from "@/hooks/use-media-query";
-import confetti from "canvas-confetti";
-
-const plans = [
-  {
-    name: "Free",
-    price: { monthly: "Free", yearly: "Free" },
-    description: "Perfect for getting started",
-    features: [
-      "15 Tokens Per week",
-      "Basic Q&A",
-      "Basic Search",
-      "Flashcards Generation",
-      "Past Paper Search",
-    ],
-  },
-  {
-    name: "Pro",
-    price: { monthly: "£4.99", yearly: "£47.90" },
-    description: "Best for active learners",
-    features: [
-      "100 Tokens per week",
-      "Basic Q&A",
-      "Basic Search",
-      "Flashcards Generation",
-      "Past Paper Search",
-      "Intelligent Quiz Generation",
-      "Deep Research (5 chats per week)",
-      "Diagram Generation",
-      "Reasoning (10 chats per day)",
-    ],
-    popular: true,
-  },
-  {
-    name: "Excelsior",
-    price: { monthly: "£24.99", yearly: "£239.90" },
-    description: "For maximum learning potential",
-    features: [
-      "Unlimited Tokens",
-      "Basic Q&A",
-      "Basic Search",
-      "Flashcards Generation",
-      "Past Paper Search",
-      "Intelligent Quiz Generation",
-      "Deep Research (5 chats per day)",
-      "Diagram Generation",
-      "Reasoning (50 chats per day)",
-      "Customisable System Prompt",
-    ],
-  },
-];
-
-const PriceDisplay = ({ price }: { price: string }) => {
-  if (price === "Free") return <span className="text-4xl font-bold">Free</span>;
-
-  const [currency, amount] = price.split("£");
-  
-  return (
-    <div className="flex items-baseline">
-      <span className="text-4xl font-bold">£</span>
-      <AnimatePresence mode="popLayout">
-        <motion.span
-          key={amount}
-          initial={{ y: 20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          exit={{ y: -20, opacity: 0 }}
-          transition={{
-            type: "spring",
-            stiffness: 300,
-            damping: 25,
-            duration: 0.5
-          }}
-          className="text-4xl font-bold"
-        >
-          {amount}
-        </motion.span>
-      </AnimatePresence>
-    </div>
-  );
-};
+import { motion } from "framer-motion";
+import { ArrowLeft } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function PricingPage() {
-  const [isYearly, setIsYearly] = useState(false);
-  const isDesktop = useMediaQuery("(min-width: 768px)");
-
-  const handlePurchase = () => {
-    confetti({
-      particleCount: 100,
-      spread: 70,
-      origin: { y: 0.6 },
-    });
-  };
-
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-background to-primary/5 px-4 py-24">
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5 }}
-        className="mb-8 text-center"
-      >
-        <h1 className="mb-4 text-4xl font-bold tracking-tight sm:text-5xl">
-          Choose Your Plan
-        </h1>
-        <p className="text-muted-foreground">
-          Select the perfect plan for your learning journey
-        </p>
-      </motion.div>
-
-      <div className="mb-8 flex items-center gap-2">
-        <span className={!isYearly ? "font-medium" : "text-muted-foreground"}>
-          Monthly
-        </span>
-        <Switch
-          checked={isYearly}
-          onCheckedChange={setIsYearly}
-          className="data-[state=checked]:bg-primary"
+    <div className="relative min-h-screen w-full flex items-center justify-center bg-[#0d0d0d] overflow-hidden">
+      {/* Background image with gradient overlay */}
+      <div className="absolute inset-0">
+        <Image
+          src="https://x.ai/images/news/funding.webp"
+          alt="Atlas Intelligence background image"
+          fill
+          className="object-cover opacity-90"
+          priority
         />
-        <span className={isYearly ? "font-medium" : "text-muted-foreground"}>
-          Yearly (Save 20%)
+        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/50 to-black/90" />
+      </div>
+
+      {/* Large semi-transparent Atlas text */}
+      <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none">
+        <span className="text-[30vw] font-bold bg-gradient-to-r from-zinc-300 to-transparent bg-clip-text text-transparent leading-none" aria-hidden="true">
+          ATLAS
         </span>
       </div>
 
-      <div className="grid max-w-7xl gap-8 md:grid-cols-3">
-        {plans.map((plan, index) => (
-          <motion.div
-            key={plan.name}
+      {/* Main content */}
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-4">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="flex flex-col items-center justify-center text-center"
+        >
+          <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: index * 0.1 }}
-            className={`relative rounded-xl border bg-card p-8 ${
-              plan.popular
-                ? "border-primary shadow-lg shadow-primary/10"
-                : "border-border"
-            }`}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6"
           >
-            {plan.popular && (
-              <div className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-primary px-3 py-1 text-xs font-medium text-primary-foreground">
-                Most Popular
-              </div>
-            )}
+            Atlas Pricing
+          </motion.h1>
+          
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="text-2xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-zinc-300 to-zinc-500 bg-clip-text text-transparent mb-8"
+          >
+            Coming Soon
+          </motion.h2>
 
-            <div className="mb-6">
-              <h3 className="text-2xl font-bold">{plan.name}</h3>
-              <p className="mt-2 text-sm text-muted-foreground">
-                {plan.description}
-              </p>
-            </div>
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 0.6 }}
+            className="text-zinc-300 text-lg md:text-xl max-w-2xl mb-12"
+          >
+            We're working hard to bring you transparent, value-driven pricing options. 
+            Stay tuned for exciting plans that will revolutionize your learning experience.
+          </motion.p>
 
-            <div className="mb-6">
-              <PriceDisplay price={isYearly ? plan.price.yearly : plan.price.monthly} />
-              {plan.name !== "Free" && (
-                <span className="text-muted-foreground">
-                  {isYearly ? " / year" : " / month"}
-                </span>
-              )}
-            </div>
-
-            <ul className="mb-8 space-y-4">
-              {plan.features.map((feature) => (
-                <li key={feature} className="flex items-center gap-2">
-                  <Check className="h-5 w-5 text-primary" />
-                  <span>{feature}</span>
-                </li>
-              ))}
-            </ul>
-
-            <Button
-              className="w-full"
-              variant={plan.popular ? "default" : "outline"}
-              onClick={handlePurchase}
-            >
-              {plan.name === "Free" ? "Get Started" : "Subscribe Now"}
-            </Button>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.8 }}
+            className="flex flex-col sm:flex-row gap-4 items-center"
+          >
+            <Link href="/">
+              <button className="flex items-center gap-2 px-6 py-3 bg-zinc-800 hover:bg-zinc-700 border border-zinc-700 rounded-full text-zinc-300 hover:text-white transition-all">
+                <ArrowLeft className="w-5 h-5" />
+                Back to Home
+              </button>
+            </Link>
+            
+            <Link href="/waitlist">
+              <button className="px-6 py-3 bg-white hover:bg-zinc-100 text-black font-medium rounded-full transition-all">
+                Join Waitlist
+              </button>
+            </Link>
           </motion.div>
-        ))}
+        </motion.div>
       </div>
     </div>
   );
