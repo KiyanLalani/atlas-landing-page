@@ -98,7 +98,7 @@ const Header = () => {
         >
           <Link href="/">
             <Image 
-              src="https://ibb.co/9Hss3PmF"
+              src="https://i.ibb.co/pvs12w9D/Atlas-Intelligence-Gold.png"
               alt="Atlas Intelligence App Logo"
               width={40}
               height={40}

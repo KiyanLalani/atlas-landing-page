@@ -49,7 +49,7 @@ export default function SchemaMarkup() {
             "name": "Atlas Group",
             "alternateName": ["Atlas Intelligence", "Atlas AI", "Atlas Education"],
             "url": "https://www.atlasintel.co.uk",
-            "logo": "https://ibb.co/9Hss3PmF",
+            "logo": "https://i.ibb.co/pvs12w9D/Atlas-Intelligence-Gold.png",
             "description": "Atlas Group develops innovative AI-powered educational technology solutions to transform learning experiences for students and educators.",
             "sameAs": [
               "https://twitter.com/AtlasGroupUK",

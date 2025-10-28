@@ -21,9 +21,9 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   icons: {
-    icon: 'https://ibb.co/9Hss3PmF',
-    apple: 'https://ibb.co/9Hss3PmF',
-    shortcut: 'https://ibb.co/9Hss3PmF',
+    icon: 'https://i.ibb.co/pvs12w9D/Atlas-Intelligence-Gold.png',
+    apple: 'https://i.ibb.co/pvs12w9D/Atlas-Intelligence-Gold.png',
+    shortcut: 'https://i.ibb.co/pvs12w9D/Atlas-Intelligence-Gold.png',
   },
   openGraph: {
     title: 'Atlas Intelligence | AI Education Platform by Atlas Group UK',
@@ -71,9 +71,9 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <SchemaMarkup />
-        <link rel="icon" href="https://ibb.co/9Hss3PmF" />
-        <link rel="apple-touch-icon" href="https://ibb.co/9Hss3PmF" />
-        <link rel="shortcut icon" href="https://ibb.co/9Hss3PmF" />
+        <link rel="icon" href="https://i.ibb.co/pvs12w9D/Atlas-Intelligence-Gold.png" />
+        <link rel="apple-touch-icon" href="https://i.ibb.co/pvs12w9D/Atlas-Intelligence-Gold.png" />
+        <link rel="shortcut icon" href="https://i.ibb.co/pvs12w9D/Atlas-Intelligence-Gold.png" />
       </head>
       <body className={inter.className}>
         <ThemeProvider
