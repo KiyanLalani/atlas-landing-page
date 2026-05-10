@@ -34,6 +34,26 @@ export default function NewsPage() {
           >
             <article className="rounded-lg border bg-card p-6">
               <div className="mb-4 text-sm text-muted-foreground">
+                Published: May 10, 2026
+              </div>
+              <h2 className="text-2xl font-bold mb-4">
+                A New Chapter for Atlas Intelligence
+              </h2>
+              <p className="text-muted-foreground mb-6">
+                Atlas is going offline temporarily as we undertake the most significant transformation in our
+                platform's history — rebuilding from the ground up to deliver the highest quality education
+                to every student, everywhere.
+              </p>
+              <Link href="/newchapter">
+                <Button variant="outline" className="group">
+                  Read Full Story
+                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </Button>
+              </Link>
+            </article>
+
+            <article className="rounded-lg border bg-card p-6">
+              <div className="mb-4 text-sm text-muted-foreground">
                 Published: May 15, 2025
               </div>
               <h2 className="text-2xl font-bold mb-4">
