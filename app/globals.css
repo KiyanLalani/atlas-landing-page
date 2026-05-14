@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ── Ambassador form: date input normalisation ── */
+input[type='date']::-webkit-calendar-picker-indicator {
+  opacity: 0.45;
+  cursor: pointer;
+  filter: sepia(0.3);
+}
+input[type='date']::-webkit-datetime-edit { color: #3A3530; }
+input[type='date']::-webkit-datetime-edit-fields-wrapper { padding: 0; }
+input[type='date']::-webkit-inner-spin-button { display: none; }
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;

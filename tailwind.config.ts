@@ -20,6 +20,15 @@ const config: Config = {
         sm: 'calc(var(--radius) - 4px)',
       },
       colors: {
+        // Ambassador form palette — hardcoded so dark mode doesn't invert them
+        bone: '#F2ECE3',
+        charcoal: '#3A3530',
+        taupe: '#7A6E63',
+        'warm-border': '#E0D8CC',
+        'peach-light': '#F4C9A6',
+        'peach-dark': '#E89F75',
+        terracotta: '#C56B4F',
+        // Existing site palette
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         card: {
