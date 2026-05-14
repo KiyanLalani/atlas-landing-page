@@ -40,10 +40,8 @@ export default function StepTwo() {
               label="In your own words, what do you think Atlas Intelligence does?"
               placeholder="Share what you know — there's no wrong answer…"
               rows={4}
-              countHint="· aim for 200–600"
               rules={{
                 required: 'Please share what you know about Atlas',
-                minLength: { value: 10, message: 'Please write a little more' },
               }}
             />
           </motion.div>
