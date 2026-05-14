@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { AnimatedShinyText } from "@/components/ui/animated-shiny-text";
 import { useState, useEffect } from "react";
@@ -33,8 +34,17 @@ export default function HeroSection() {
 
   return (
     <section className="relative min-h-screen w-full flex items-end justify-center bg-[#0d0d0d] overflow-hidden pb-32" aria-label="Hero Section">
-      {/* Background gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/50 to-black/90" />
+      {/* Background image with gradient overlay */}
+      <div className="absolute inset-0">
+        <Image
+          src="https://x.ai/images/news/funding.webp"
+          alt="Atlas Intelligence background"
+          fill
+          className="object-cover opacity-90"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/50 to-black/90" />
+      </div>
 
       {/* Large semi-transparent Atlas text */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none select-none">
