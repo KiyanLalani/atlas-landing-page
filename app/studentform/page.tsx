@@ -131,7 +131,7 @@ export default function StudentFormPage() {
         pt-32 clears the site's fixed header (top-4 + h-20 + breathing room).
         min-h-screen ensures the bone background fills the viewport.
       */}
-      <div className="relative min-h-screen bg-bone pt-32 pb-20">
+      <div className="relative min-h-screen bg-bone pt-16 pb-20">
         <GrainOverlay />
         <PeachBloom />
 

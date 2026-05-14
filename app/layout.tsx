@@ -2,7 +2,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { ThemeProvider } from '@/components/theme-provider';
-import Header from '@/components/header';
+import ConditionalHeader from '@/components/ConditionalHeader';
 import SchemaMarkup from './schema';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -82,7 +82,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Header />
+          <ConditionalHeader />
           {children}
         </ThemeProvider>
       </body>
