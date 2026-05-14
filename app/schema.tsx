@@ -15,12 +15,7 @@ export default function SchemaMarkup() {
             "offers": {
               "@type": "Offer",
               "price": "0",
-              "priceCurrency": "USD"
-            },
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "4.8",
-              "ratingCount": "512"
+              "priceCurrency": "GBP"
             },
             "featureList": [
               "AI Q&A Engine",
@@ -37,10 +32,6 @@ export default function SchemaMarkup() {
               "name": "Atlas Group",
               "url": "https://www.atlasintel.co.uk"
             },
-            "potentialAction": {
-              "@type": "DownloadAction",
-              "target": "https://apps.apple.com/app/atlas-intelligence/id123456789"
-            },
             "keywords": "Atlas Intelligence, Atlas AI, Atlas Education, Atlas Group, AI in education, educational technology"
           },
           {
@@ -49,12 +40,11 @@ export default function SchemaMarkup() {
             "name": "Atlas Group",
             "alternateName": ["Atlas Intelligence", "Atlas AI", "Atlas Education"],
             "url": "https://www.atlasintel.co.uk",
-            "logo": "https://ibb.co/9Hss3PmF",
+            "logo": "https://i.postimg.cc/6QnyBL8X/Atlas-Intelligence-Gold.png",
             "description": "Atlas Group develops innovative AI-powered educational technology solutions to transform learning experiences for students and educators.",
             "sameAs": [
-              "https://twitter.com/AtlasGroupUK",
-              "https://www.facebook.com/AtlasGroupUK",
-              "https://www.linkedin.com/company/atlas-group-uk"
+              "https://twitter.com/atlas_groupai",
+              "https://www.instagram.com/atlas_group_intelligence"
             ],
             "foundingDate": "2023",
             "foundingLocation": "United Kingdom",
@@ -69,15 +59,10 @@ export default function SchemaMarkup() {
             "@type": "WebSite",
             "url": "https://www.atlasintel.co.uk",
             "name": "Atlas Intelligence by Atlas Group",
-            "description": "Official website for Atlas Intelligence, the AI-powered education platform developed by Atlas Group.",
-            "potentialAction": {
-              "@type": "SearchAction",
-              "target": "https://www.atlasintel.co.uk/search?q={search_term_string}",
-              "query-input": "required name=search_term_string"
-            }
+            "description": "Official website for Atlas Intelligence, the AI-powered education platform developed by Atlas Group."
           }
         ])
       }}
     />
   );
-} 
+}

@@ -74,7 +74,7 @@ const FooterSection = () => {
             </a>
           </div>
           <p className="text-sm text-muted-foreground">2025 Atlas Group</p>
-          <p className="mt-2 text-sm text-muted-foreground mb-96">
+          <p className="mt-2 text-sm text-muted-foreground">
             Intelligence Amplified
           </p>
         </div>

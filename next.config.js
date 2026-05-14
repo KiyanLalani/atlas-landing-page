@@ -1,10 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-  images: { 
+  images: {
     unoptimized: true,
     remotePatterns: [
       {
@@ -13,7 +10,7 @@ const nextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'ibb.co',
+        hostname: 'i.postimg.cc',
       },
       {
         protocol: 'https',
@@ -21,20 +18,6 @@ const nextConfig = {
       },
     ],
   },
-  webpack: (config, { isServer }) => {
-    // Disable cache for both client and server
-    config.cache = false;
-    return config;
-  },
-  // For static export with proper SEO
-  generateMetadata: async () => {
-    return {
-      robots: {
-        index: true,
-        follow: true,
-      }
-    }
-  }
 };
 
 module.exports = nextConfig;

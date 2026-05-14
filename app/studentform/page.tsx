@@ -93,7 +93,6 @@ export default function StudentFormPage() {
 
   const doSubmit = async () => {
     const data = methods.getValues();
-    console.log('Form payload:', data);
     setSubmitError(false);
     await formspreeSubmit({ ...data });
   };
