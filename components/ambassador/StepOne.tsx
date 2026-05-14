@@ -31,7 +31,7 @@ export default function StepOne() {
         max={todayStr}
         rules={{
           required: 'Please enter your date of birth',
-          validate: (value) => {
+          validate: (value: unknown) => {
             if (!value) return 'Please enter your date of birth';
             const [y, mo, d] = (value as string).split('-').map(Number);
             const date = new Date(y, mo - 1, d);
