@@ -32,7 +32,7 @@ export default function StepFour() {
         max={formatLocalDate(maxDate)}
         rules={{
           required: 'Please select an interview date',
-          validate: (value) => {
+          validate: (value: unknown) => {
             if (!value) return 'Please select an interview date';
             const [y, mo, d] = (value as string).split('-').map(Number);
             const selected = new Date(y, mo - 1, d);
