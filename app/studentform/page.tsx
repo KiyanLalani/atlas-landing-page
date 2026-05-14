@@ -124,12 +124,23 @@ export default function StudentFormPage() {
 
   const isSubmitting = formspreeState.submitting;
 
+  // Force body + html background to bone for this page only, cleaned up on unmount
+  useEffect(() => {
+    const prev = document.body.style.backgroundColor;
+    const prevHtml = document.documentElement.style.backgroundColor;
+    document.body.style.backgroundColor = '#F2ECE3';
+    document.documentElement.style.backgroundColor = '#F2ECE3';
+    return () => {
+      document.body.style.backgroundColor = prev;
+      document.documentElement.style.backgroundColor = prevHtml;
+    };
+  }, []);
+
   return (
     <FormProvider {...methods}>
-      {/*
-        pt-32 clears the site's fixed header (top-4 + h-20 + breathing room).
-        min-h-screen ensures the bone background fills the viewport.
-      */}
+      {/* Fixed full-viewport bone backdrop — prevents dark body bleeding through on any device */}
+      <div className="fixed inset-0 -z-10" style={{ backgroundColor: '#F2ECE3' }} aria-hidden="true" />
+
       <div className="relative min-h-[100dvh] bg-bone pt-16 pb-20" style={{ backgroundColor: '#F2ECE3' }}>
         <GrainOverlay />
         <PeachBloom />
