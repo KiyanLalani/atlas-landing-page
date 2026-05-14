@@ -37,6 +37,7 @@ const FooterSection = () => {
               <li><a href="#roadmap" className="text-muted-foreground hover:text-foreground">Roadmap</a></li>
               <li><Link href="/privacypolicy" className="text-muted-foreground hover:text-foreground">Privacy Policy</Link></li>
               <li><Link href="/termsandconditions" className="text-muted-foreground hover:text-foreground">Terms & Conditions</Link></li>
+              <li><Link href="/studentform" className="text-muted-foreground hover:text-foreground">Student Ambassador</Link></li>
             </ul>
           </div>
 
