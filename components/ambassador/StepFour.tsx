@@ -1,6 +1,7 @@
 'use client';
 
-import FormInput from './FormInput';
+import DatePicker from './DatePicker';
+import TimePicker from './TimePicker';
 import RadioPills from './RadioPills';
 import FormTextarea from './FormTextarea';
 
@@ -23,10 +24,10 @@ export default function StepFour() {
 
   return (
     <div className="flex flex-col gap-10 pt-2">
-      <FormInput
+      <DatePicker
         name="interviewDate"
         label="Preferred interview date"
-        type="date"
+        disableWeekends={true}
         min={formatLocalDate(tomorrow)}
         max={formatLocalDate(maxDate)}
         rules={{
@@ -46,6 +47,11 @@ export default function StepFour() {
             return true;
           },
         }}
+      />
+      <TimePicker
+        name="interviewTime"
+        label="Preferred interview time"
+        rules={{ required: 'Please select a time' }}
       />
       <RadioPills
         name="format"

@@ -1,6 +1,7 @@
 'use client';
 
 import FormInput from './FormInput';
+import DatePicker from './DatePicker';
 
 function formatLocalDate(date: Date): string {
   const y = date.getFullYear();
@@ -23,10 +24,10 @@ export default function StepOne() {
           minLength: { value: 2, message: 'Name must be at least 2 characters' },
         }}
       />
-      <FormInput
+      <DatePicker
         name="dateOfBirth"
         label="Date of birth"
-        type="date"
+        disableWeekends={false}
         max={todayStr}
         rules={{
           required: 'Please enter your date of birth',

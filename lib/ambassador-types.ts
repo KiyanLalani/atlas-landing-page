@@ -7,6 +7,7 @@ export interface FormValues {
   motivation: string;
   skills: string;
   interviewDate: string;
+  interviewTime: string;
   format: 'Online' | 'In person';
   anythingElse: string;
 }

@@ -26,7 +26,7 @@ const STEP_FIELDS: Record<number, Array<keyof FormValues>> = {
   1: ['name', 'dateOfBirth', 'email'],
   2: ['knowsAtlas', 'atlasDescription'],
   3: ['motivation', 'skills'],
-  4: ['interviewDate', 'format'],
+  4: ['interviewDate', 'interviewTime', 'format'],
 };
 
 const motionProps = {
@@ -55,6 +55,7 @@ export default function StudentFormPage() {
       motivation: '',
       skills: '',
       interviewDate: '',
+      interviewTime: '09:00',
       format: 'Online',
       anythingElse: '',
     },
