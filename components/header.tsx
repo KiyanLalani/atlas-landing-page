@@ -41,8 +41,9 @@ const Header = () => {
       left: "0",
       borderRadius: "0px",
       backgroundColor: "rgba(0, 0, 0, 0)",
-      backdropFilter: "none",
+      backdropFilter: "blur(0px)",
       boxShadow: "none",
+      borderColor: "rgba(255, 255, 255, 0)",
     },
     pill: {
       width: "80%",
@@ -52,6 +53,7 @@ const Header = () => {
       backgroundColor: "rgba(0, 0, 0, 0.8)",
       backdropFilter: "blur(10px)",
       boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+      borderColor: "rgba(255, 255, 255, 0.1)",
     }
   };
 
@@ -85,10 +87,7 @@ const Header = () => {
         layout: true
       }}
       layoutRoot
-      className={cn(
-        "fixed top-4 z-50 will-change-transform",
-        scrolled ? "border border-white/10" : "border-b border-transparent"
-      )}
+      className="fixed top-4 z-50 will-change-transform border"
     >
       <div className="container mx-auto flex h-16 max-w-full items-center justify-between px-8 md:h-20">
         <motion.div 
