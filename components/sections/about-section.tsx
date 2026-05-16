@@ -114,22 +114,20 @@ export default function AboutSection() {
           >
             <div>
               <p className="text-zinc-500 text-xs tracking-[0.12em] uppercase font-medium mb-3">
-                Now in beta
+                Coming soon
               </p>
               <h3 className="text-white font-semibold text-[16px] leading-snug mb-3">
-                Try Atlas today
+                V2 is on its way
               </h3>
               <p className="text-zinc-500 text-sm leading-relaxed">
-                Atlas is live and being used by students right now. Sign up free and see the difference a genuinely adaptive learning tool makes.
+                We released V1, learned a lot, and took it down. What we're building now is a completely different level. V2 is coming soon.
               </p>
             </div>
             <a
-              href="https://chat.atlasintel.co.uk/login"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/waitlist"
               className="inline-flex items-center gap-2 self-start px-5 py-2.5 rounded-full text-sm font-medium bg-white text-black transition-all duration-200 hover:bg-zinc-200 active:scale-95"
             >
-              Get started free
+              Join the waitlist
             </a>
           </motion.div>
         </motion.div>
