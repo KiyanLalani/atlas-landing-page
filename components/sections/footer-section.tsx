@@ -22,8 +22,7 @@ const FooterSection = () => {
           <div className="md:col-span-2">
             <h3 className="mb-4 text-2xl font-bold">Atlas Intelligence</h3>
             <p className="mb-4 max-w-md text-muted-foreground">
-              Next-generation AI-powered educational platform designed for GCSE and A-Level students,
-              developed as part of the Tycoon 1K school enterprise initiative.
+              Next-generation AI-powered educational platform designed for GCSE and A-Level students.
             </p>
 
           </div>
@@ -32,12 +31,13 @@ const FooterSection = () => {
             <h4 className="mb-4 text-lg font-medium">Quick Links</h4>
             <ul className="space-y-2">
               <li><a href="#" className="text-muted-foreground hover:text-foreground">Home</a></li>
-              <li><a href="#features" className="text-muted-foreground hover:text-foreground">Features</a></li>
+              <li><Link href="/news" className="text-muted-foreground hover:text-foreground">News</Link></li>
               <li><Link href="/pricing" className="text-muted-foreground hover:text-foreground">Pricing</Link></li>
-              <li><a href="#roadmap" className="text-muted-foreground hover:text-foreground">Roadmap</a></li>
               <li><Link href="/privacypolicy" className="text-muted-foreground hover:text-foreground">Privacy Policy</Link></li>
               <li><Link href="/termsandconditions" className="text-muted-foreground hover:text-foreground">Terms & Conditions</Link></li>
               <li><Link href="/studentform" className="text-muted-foreground hover:text-foreground">Student Ambassador</Link></li>
+              {/* <li><a href="#features" className="text-muted-foreground hover:text-foreground">Features</a></li> */}
+              {/* <li><a href="#roadmap" className="text-muted-foreground hover:text-foreground">Roadmap</a></li> */}
             </ul>
           </div>
 
@@ -57,7 +57,7 @@ const FooterSection = () => {
         <div className="mt-12 border-t pt-6 text-center">
           <div className="flex justify-center space-x-4 mb-4">
             <a 
-              href="https://x.com/atlas_groupai" 
+              href="https://x.com/AtlasIntelAI" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-foreground transition-colors"
@@ -65,7 +65,7 @@ const FooterSection = () => {
               <Twitter className="h-6 w-6" />
             </a>
             <a 
-              href="https://www.instagram.com/atlas_group_intelligence" 
+              href="https://www.instagram.com/atlas_intel?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-foreground transition-colors"
@@ -73,7 +73,7 @@ const FooterSection = () => {
               <Instagram className="h-6 w-6" />
             </a>
           </div>
-          <p className="text-sm text-muted-foreground">2025 Atlas Group</p>
+          <p className="text-sm text-muted-foreground">Atlas Intel Ltd</p>
           <p className="mt-2 text-sm text-muted-foreground">
             Intelligence Amplified
           </p>

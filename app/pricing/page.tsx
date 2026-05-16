@@ -52,7 +52,7 @@ export default function PricingPage() {
         transition={{ duration: 0.7, delay: 0.25 }}
         className="relative z-10 text-zinc-400 text-base md:text-lg max-w-md text-center mb-14"
       >
-        We're putting together pricing that actually works for students. Check back soon — it'll be worth the wait.
+        We're putting together pricing that actually works for students. Check back soon. It'll be worth the wait.
       </motion.p>
 
       {/* Ghost pricing cards */}

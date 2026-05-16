@@ -34,6 +34,26 @@ export default function NewsPage() {
           >
             <article className="rounded-lg border bg-card p-6">
               <div className="mb-4 text-sm text-muted-foreground">
+                Published: May 16, 2026
+              </div>
+              <h2 className="text-2xl font-bold mb-4">
+                Announcing: The Atlas Intelligence Student Ambassador Programme
+              </h2>
+              <p className="text-muted-foreground mb-6">
+                We are building Atlas with the students we are building it for. The Ambassador Programme brings
+                students into the development of the platform from the start, through paid, project-based work,
+                direct access to the founding team, and connections across the AI and education space.
+              </p>
+              <Link href="/ambassadorprogramme">
+                <Button variant="outline" className="group">
+                  Read Full Story
+                  <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </Button>
+              </Link>
+            </article>
+
+            <article className="rounded-lg border bg-card p-6">
+              <div className="mb-4 text-sm text-muted-foreground">
                 Published: May 10, 2026
               </div>
               <h2 className="text-2xl font-bold mb-4">
@@ -41,7 +61,7 @@ export default function NewsPage() {
               </h2>
               <p className="text-muted-foreground mb-6">
                 Atlas is going offline temporarily as we undertake the most significant transformation in our
-                platform's history — rebuilding from the ground up to deliver the highest quality education
+                platform's history, rebuilding from the ground up to deliver the highest quality education
                 to every student, everywhere.
               </p>
               <Link href="/newchapter">

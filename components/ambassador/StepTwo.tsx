@@ -38,7 +38,7 @@ export default function StepTwo() {
             <FormTextarea
               name="atlasDescription"
               label="In your own words, what do you think Atlas Intelligence does?"
-              placeholder="Share what you know — there's no wrong answer…"
+              placeholder="Share what you know, there's no wrong answer…"
               rows={4}
               rules={{
                 required: 'Please share what you know about Atlas',

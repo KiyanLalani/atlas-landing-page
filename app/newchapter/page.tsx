@@ -22,7 +22,7 @@ export default function NewChapterPage() {
             A New Chapter for Atlas Intelligence
           </h1>
           <p className="text-lg text-muted-foreground">
-            Atlas is going offline — and we couldn't be more excited about it
+            Atlas is going offline, and we couldn't be more excited about it
           </p>
         </motion.div>
 
@@ -41,7 +41,7 @@ export default function NewChapterPage() {
                 deliver the highest quality education to every student, everywhere.
               </p>
               <p className="text-muted-foreground">
-                This isn't a step back — it's the biggest leap forward we've ever made.
+                This isn't a step back. It's the biggest leap forward we've ever made.
               </p>
             </Card>
 
@@ -57,7 +57,7 @@ export default function NewChapterPage() {
               <h2 className="text-2xl font-semibold mb-4">What This Means For You</h2>
               <p className="text-muted-foreground">
                 While Atlas is temporarily offline, we'll be rolling out these changes across every part of the platform.
-                We know any downtime is an inconvenience, and we don't take that lightly — but what's coming is worth
+                We know any downtime is an inconvenience, and we don't take that lightly, but what's coming is worth
                 the wait.
               </p>
             </Card>
@@ -95,7 +95,7 @@ export default function NewChapterPage() {
                     <div>
                       <h3 className="font-semibold mb-1">Built for Everyone</h3>
                       <p className="text-sm text-muted-foreground">
-                        A platform that makes world-class education available to all — regardless of background or location.
+                        A platform that makes world-class education available to all, regardless of background or location.
                       </p>
                     </div>
                   </div>
@@ -110,7 +110,7 @@ export default function NewChapterPage() {
               </div>
               <p className="text-muted-foreground mb-4">
                 We've never been more excited about the future of Atlas Intelligence. The changes we're making represent
-                a complete step change in what AI-powered education can look like — and we can't wait for you to see it.
+                a complete step change in what AI-powered education can look like, and we can't wait for you to see it.
               </p>
               <p className="text-muted-foreground">
                 Stay tuned for updates as we prepare to relaunch. The best is yet to come.

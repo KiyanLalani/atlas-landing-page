@@ -62,7 +62,7 @@ export default function StepFour() {
       <FormTextarea
         name="anythingElse"
         label="Anything else you'd like us to know?"
-        placeholder="Optional — share anything you think would be helpful…"
+        placeholder="Optional: share anything you think would be helpful…"
         rows={4}
       />
     </div>

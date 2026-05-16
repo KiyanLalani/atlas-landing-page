@@ -16,10 +16,10 @@ const Header = () => {
 
   const navItems = [
     { name: 'Home', url: '/', icon: Home },
-    { name: 'Features', url: '/#features', icon: Sparkles },
     { name: 'News', url: '/news', icon: Newspaper },
-    { name: 'Roadmap', url: '/#roadmap', icon: FileText },
     { name: 'Pricing', url: '/pricing', icon: BookOpen },
+    // { name: 'Features', url: '/#features', icon: Sparkles },   // hidden — re-enable when ready
+    // { name: 'Roadmap', url: '/#roadmap', icon: FileText },     // hidden — re-enable when ready
   ];
 
   useEffect(() => {
