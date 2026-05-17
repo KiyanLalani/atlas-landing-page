@@ -5,32 +5,7 @@ import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { AnimatedShinyText } from "@/components/ui/animated-shiny-text";
-import { useState, useEffect } from "react";
-
 export default function HeroSection() {
-  // State to store the prompt input
-  const [prompt, setPrompt] = useState("");
-  
-  const handleRedirect = () => {
-    if (!prompt.trim()) {
-      // If prompt is empty, just redirect to login page
-      window.location.href = "https://chat.atlasintel.co.uk/login";
-      return;
-    }
-
-    // URL encode the prompt
-    const encodedPrompt = encodeURIComponent(prompt.trim());
-    
-    // Always include the prompt in the URL, even when redirecting to login
-    // The chat application can handle retrieving this prompt after login
-    window.location.href = `https://chat.atlasintel.co.uk/login?prompt=${encodedPrompt}`;
-  };
-
-  const handleKeyPress = (e: React.KeyboardEvent) => {
-    if (e.key === 'Enter') {
-      handleRedirect();
-    }
-  };
 
   return (
     <section className="relative min-h-screen w-full flex items-end justify-center bg-[#0d0d0d] overflow-hidden pb-32" aria-label="Hero Section">
@@ -62,30 +37,30 @@ export default function HeroSection() {
           className="flex flex-col items-center justify-center md:mt-[100px]"
         >
           <h1 className="sr-only">Atlas Intelligence - AI-Powered Educational App for iOS</h1>
-          
-          {/* Search input */}
-          <div className="w-full max-w-3xl mx-auto">
-            <div className="relative group">
-              <label htmlFor="search-atlas" className="sr-only">Ask Atlas anything</label>
-              <input
-                id="search-atlas"
-                type="text"
-                placeholder="Ask Atlas anything..."
-                className="w-full px-6 py-4 bg-zinc-900/80 border border-zinc-800 rounded-full text-zinc-100 placeholder-zinc-500 focus:outline-none focus:ring-2 focus:ring-zinc-700 transition-all group-hover:bg-zinc-900/90"
-                value={prompt}
-                onChange={(e) => setPrompt(e.target.value)}
-                onKeyPress={handleKeyPress}
-                aria-label="Search Atlas Intelligence"
-              />
-              <button 
-                onClick={handleRedirect}
-                className="absolute right-3 top-1/2 -translate-y-1/2 p-2 rounded-full bg-zinc-800 hover:bg-zinc-700 transition-colors group-hover:bg-zinc-700"
-                aria-label="Submit search"
-              >
-                <ArrowRight className="w-5 h-5 text-zinc-400 group-hover:text-zinc-300" />
-              </button>
-            </div>
-          </div>
+
+          {/* V2 announcement banner */}
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+          >
+            <Link href="/newchapter">
+              <div className="inline-flex items-center gap-3 px-5 py-3 rounded-full border border-zinc-700/60 bg-zinc-900/70 backdrop-blur-sm hover:border-zinc-500/60 hover:bg-zinc-800/70 transition-all duration-300 cursor-pointer group">
+                <span className="flex items-center gap-1.5">
+                  <span className="relative flex h-2 w-2">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-50"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-white"></span>
+                  </span>
+                  <span className="text-xs font-semibold tracking-[0.12em] uppercase text-zinc-400">New</span>
+                </span>
+                <span className="w-px h-3 bg-zinc-700" />
+                <AnimatedShinyText className="text-sm text-zinc-300">
+                  Atlas Intelligence V2 — read the announcement
+                </AnimatedShinyText>
+                <ArrowRight className="w-3.5 h-3.5 text-zinc-500 group-hover:text-zinc-300 group-hover:translate-x-0.5 transition-all duration-200" />
+              </div>
+            </Link>
+          </motion.div>
 
           {/* Description text */}
           <motion.p
@@ -94,7 +69,7 @@ export default function HeroSection() {
             transition={{ duration: 1, delay: 0.3 }}
             className="mt-6 text-zinc-300 text-sm max-w-md text-center"
           >
-            The Future of Learning is here. Your AI-powered educational companion for iOS. Ask questions, generate flashcards, search the web, get explanations, and explore topics across your curriculum.
+            V2 is in development. An AI tutor built specifically for GCSE and A Level students, rebuilt from the ground up. Join the waitlist for early access.
           </motion.p>
         </motion.div>
       </div>
